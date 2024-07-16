@@ -1,0 +1,65 @@
+:root {
+  --navbar-ht: 77px;
+  --primary-color: #ff7d1a;
+  --secondary-color: #69707D;
+  --hover-color: #000000;
+  --active-color: #FF7D1A;
+}
+
+.app_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+nav.open {
+  --tw-shadow: 0 25px 50px -12px #00000040;
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  background-color: #fff;
+  box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  left: 0;
+  padding: 2rem;
+  top: 0;
+}
+
+nav {
+  height: 100%;
+  left: -100vw;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  width: 70%;
+  z-index: 99;
+}
+
+nav ul li.active a {
+  color: var(--active-color);
+  border-bottom: 4px solid var(--active-color);
+}
+
+nav ul li a {
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--hover-color);
+}
+
+@media (min-width: 1024px) {
+  nav {
+    position: static;
+    height: auto;
+    left: auto;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    padding: 0;
+  }
+
+  nav.open {
+    display: flex;
+  }
+}
