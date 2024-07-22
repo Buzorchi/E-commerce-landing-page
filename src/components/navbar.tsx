@@ -53,7 +53,7 @@ export function Navbar() {
                                 >
                                     <a 
                                         href={`#${menu}`} 
-                                        className={`text-black text-sm font-kumbh font-bold lg:text-[#adb5bd] relative pb-[40px] ${active === menu ? "active-link" : "hover:text-Very-dark-blue lg:hover:text-[#868e96]"}`}
+                                        className={`text-black text-sm font-kumbh font-bold lg:text-[#adb5bd] relative lg:pb-[40px] ${active === menu ? "active-link" : "hover:text-Very-dark-blue lg:hover:text-[#868e96]"}`}
                                     >
                                         {menu}
                                     </a>
